@@ -20,6 +20,11 @@ textarea {
   width: 100%;
 }
 
+textarea {
+  font-family: monospace;
+  font-size: 12px;
+}
+
 textarea#txt-template {
   margin-left: 0.5em;
 }

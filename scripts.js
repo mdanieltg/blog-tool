@@ -7,7 +7,7 @@
       link = document.getElementById('txt-link'),
       picture = document.getElementById('txt-img');
 
-  document.getElementById('apply-button').onclick = function(e) {
+  document.getElementById('generate-button').onclick = function(e) {
     e.preventDefault();
 
     result.value = '';
@@ -29,6 +29,13 @@
     buffer = buffer.replace(/{{\w*}}/gi, '');
 
     result.value = buffer;
+
+    // Limpiar campos
+    category.value = '';
+    title.value = '';
+    content.value = '';
+    link.value = '';
+    picture.value = '';
   }
 
   // Traer plantilla predeterminada
