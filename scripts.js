@@ -30,4 +30,16 @@
 
     result.value = buffer;
   }
+
+  // Traer plantilla predeterminada
+  var xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      template.value = this.responseText;
+    }
+  };
+
+  xhr.open('GET', 'https://gist.githubusercontent.com/mdanieltg/817a45139d3cee56ab54c89fe529ae22/raw/b10067f18dea19f46a7f596a351a58521845080c/blog-template', true);
+  xhr.send();
 })();
