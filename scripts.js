@@ -7,7 +7,7 @@
       link = document.getElementById('txt-link'),
       picture = document.getElementById('txt-img');
 
-  document.getElementById('apply-button').onclick = function(e) {
+  document.getElementById('generate-button').onclick = function(e) {
     e.preventDefault();
 
     result.value = '';
