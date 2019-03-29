@@ -29,6 +29,13 @@
     buffer = buffer.replace(/{{\w*}}/gi, '');
 
     result.value = buffer;
+
+    // Limpiar campos
+    category.value = '';
+    title.value = '';
+    content.value = '';
+    link.value = '';
+    picture.value = '';
   }
 
   // Traer plantilla predeterminada
